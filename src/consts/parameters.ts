@@ -1,5 +1,5 @@
 import { createThirdwebClient, getContract } from "thirdweb";
-import { polygon-zkevm-cardona-testnet } from "thirdweb/chains";
+import { "polygon-zkevm-cardona-testnet" as polygonTestnet } from "thirdweb/chains";
 
 /** Change these values to configure the application for your own use. **/
 
@@ -12,7 +12,7 @@ export const nftContract = getContract({
   address: "0x440fbb3e61A30973C3471b48eEC02020a1fbC9e7",
   // The chain object of the chain your contract is deployed to.
   // If that chain isn't in the default list of our SDK, use `defineChain` - for example: defineChain(666666)
-  chain: polygon-zkevm-cardona-testnet,
+  chain: polygonTestnet,
   client,
 });
 
