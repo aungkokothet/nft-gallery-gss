@@ -20,6 +20,7 @@ const NFTPage = () => {
     contract: nftContract,
     tokenId: BigInt(id as string),
   });
+    console.log("NFT Data:", nft);
   const { data: contractMetadata } = useReadContract(getContractMetadata, {
     contract: nftContract,
   });
