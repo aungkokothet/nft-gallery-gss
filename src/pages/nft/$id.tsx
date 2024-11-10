@@ -15,12 +15,14 @@ import { getNFT, transferEvent } from "thirdweb/extensions/erc721";
 import { getContractMetadata } from "thirdweb/extensions/common";
 
 const NFTPage = () => {
+  console.log("step1");
   const { id } = useParams();
+  console.log("step2");
   const { data: nft, isLoading } = useReadContract(getNFT, {
     contract: nftContract,
     tokenId: BigInt(id as string),
   });
-    console.log("NFT Data:", nft);
+    console.log("Step3");
   const { data: contractMetadata } = useReadContract(getContractMetadata, {
     contract: nftContract,
   });
