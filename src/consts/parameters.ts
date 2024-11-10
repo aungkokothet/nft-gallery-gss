@@ -1,5 +1,5 @@
 import { createThirdwebClient, getContract } from "thirdweb";
-import { polygonZkEvmTestnet } from "thirdweb/chains";
+import { ethereum } from "thirdweb/chains";
 
 /** Change these values to configure the application for your own use. **/
 
