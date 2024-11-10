@@ -16,6 +16,7 @@ function App() {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState<string>("");
   const debouncedSearchTerm = useDebounce(search, 500);
+  console.log("main");
   const { data: nfts, isLoading } = useReadContract(getNFTs, {
     contract: nftContract,
     count: nftsPerPage,
