@@ -17,4 +17,4 @@ export const nftContract = getContract({
 });
 
 // The block explorer you want to use (Opens when user clicks on history of events. i.e. transfers)
-export const blockExplorer = "https://cardona-zkevm.polygonscan.com/";
+export const blockExplorer = "https://cardona-zkevm.polygonscan.com";
